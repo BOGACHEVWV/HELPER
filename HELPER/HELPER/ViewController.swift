@@ -22,3 +22,9 @@
 //
 //       view.endEditing(true) // Скрывает клавиатуру, вызванную для любого объекта
 //   }
+
+// MARK: - Генератор случайного числа
+//    let randomInt = Int.random(in: 0..<6)
+//    let randomDouble = Double.random(in: 2.71828...3.14159)
+//    let randomBool = Bool.random()
+//    стандартные библиотечные функции для высококачественных случайных чисел: arc4random() или arc4random_uniform(),
