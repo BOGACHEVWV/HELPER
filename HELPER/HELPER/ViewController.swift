@@ -15,7 +15,7 @@
 //- Public methods
 //- Private methods
 
-// MARK: - округление чисел
+// MARK: - Округление чисел
 // %[флаги][ширина][.точность][размер]тип
 //private func string(from slider: UISlider) -> String {
 //    return String(format: "%.2f", slider.value)
