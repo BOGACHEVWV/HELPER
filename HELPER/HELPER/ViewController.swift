@@ -63,7 +63,7 @@
 //       textField.resignFirstResponder()
 //       return true
 
-// MARK: - Textfield. Textfield deligate. Действие после того, как курсор уходит из Textfield
+// MARK: - Textfield. Textfield deligate. Действие после завершения работы с textfield
 //func textFieldDidEndEditing(_ textField: UITextField) {
 //        guard let text = textField.text else { return }
 //        if let currentValue = Float(text) {
@@ -85,4 +85,10 @@
 //    }
 //
 //}
+// MARK: - Show Aletrt
+//private func showAlert() {
+//let alert = UIAlertController(title: "Wrong format!", message: "Please, enter correct value", preferredStyle: .alert)
+//let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//alert.addAction(cancel)
+//present(alert, animated: true, completion: nil)
 
