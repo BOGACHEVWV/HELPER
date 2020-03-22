@@ -92,3 +92,31 @@
 //alert.addAction(cancel)
 //present(alert, animated: true, completion: nil)
 
+// MARK: - Отображения кнопки "Готово" на цифровой клавиатуре
+//extension ViewController {
+//
+//private func addDoneButtonTo(_ textFields: UITextField...) {
+//
+//    textFields.forEach { textField in
+//        let keyboardToolbar = UIToolbar()
+//        textField.inputAccessoryView = keyboardToolbar
+//        keyboardToolbar.sizeToFit()
+//
+//        let doneButton = UIBarButtonItem(title:"Done",
+//                                         style: .done,
+//                                         target: self,
+//                                         action: #selector(didTapDone))
+//
+//        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+//                                            target: nil,
+//                                            action: nil)
+//
+//        keyboardToolbar.items = [flexBarButton, doneButton]
+//    }
+//}
+//
+//@objc private func didTapDone() {
+//    view.endEditing(true)
+//}
+//
+//}
