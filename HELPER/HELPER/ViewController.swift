@@ -120,3 +120,10 @@
 //}
 //
 //}
+//MARK: - Возврат с вьюконтролера без сохранения инфы
+//@IBAction func closeVCBbutton() {
+//dismiss(animated: true, completion: nil)
+//    }
+//MARK: - Возврат с вьюконтроллера с возможностью передачи данных
+//@IBAction func unwind(segue: UIStoryboardSegue) {
+//   } (создается на вьюконтроллере, на который нужно вернуться. В сториборде перетягивается с кнопки на  Exit 
