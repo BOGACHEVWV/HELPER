@@ -125,5 +125,6 @@
 //dismiss(animated: true, completion: nil)
 //    }
 //MARK: - Segue. Возврат с вьюконтроллера с возможностью передачи данных
-//@IBAction func unwind(segue: UIStoryboardSegue) {
-//   } (создается на вьюконтроллере, на который нужно вернуться. В сториборде перетягивается с кнопки на  Exit
+//@IBAction func unwindSegue(segue: UIStoryboardSegue) {
+//let thirdVC = segue.source as! ViewController
+//(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
