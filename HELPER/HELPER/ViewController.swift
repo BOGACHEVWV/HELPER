@@ -39,7 +39,7 @@
 //ceil(1.5) // 2
 //ceil(-1.3) // -1
 //ceil(-1.5) // -1
-
+//MARK: - print(#fuction) показывает название метода из которого был вызван этот принт. (позволяет определить, когда работает метод)
 //MARK: - self пишем, если требуется использовать свойство класса
 
 // MARK: - Генератор случайного числа
@@ -87,7 +87,7 @@
 //    }
 //
 //}
-// MARK: - Show Aletrt
+// MARK: - Aletrt
 //private func showAlert() {
 //let alert = UIAlertController(title: "Wrong format!", message: "Please, enter correct value", preferredStyle: .alert)
 //let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
