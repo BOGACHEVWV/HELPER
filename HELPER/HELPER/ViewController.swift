@@ -40,6 +40,8 @@
 //ceil(-1.3) // -1
 //ceil(-1.5) // -1
 
+//MARK: - self пишем, если требуется использовать свойство класса
+
 // MARK: - Генератор случайного числа
 //    let randomInt = Int.random(in: 0..<6)
 //    let randomDouble = Double.random(in: 2.71828...3.14159)
