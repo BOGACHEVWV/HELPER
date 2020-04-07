@@ -39,6 +39,8 @@
 //ceil(1.5) // 2
 //ceil(-1.3) // -1
 //ceil(-1.5) // -1
+//MARK: - Emojy. ctrl+command+space
+
 //MARK: - print(#fuction) показывает название метода из которого был вызван этот принт. (позволяет определить, когда работает метод)
 //MARK: - self пишем, если требуется использовать свойство класса
 
@@ -126,7 +128,7 @@
 //@IBAction func closeVCBbutton() {
 //dismiss(animated: true, completion: nil)
 //    }
-//MARK: - Segue. Возврат с вьюконтроллера с возможностью передачи данных
+//MARK: - Segue. Возврат с вьюконтроллера с возможностью передачи данных (данный код пишется на вью, на который возвращаемся
 //@IBAction func unwindSegue(segue: UIStoryboardSegue) {
 //let thirdVC = segue.source as! ViewController
 //(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
