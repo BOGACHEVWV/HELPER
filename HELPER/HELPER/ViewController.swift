@@ -132,3 +132,41 @@
 //@IBAction func unwindSegue(segue: UIStoryboardSegue) {
 //let thirdVC = segue.source as! ViewController
 //(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
+
+//MARK: - Segue (show) - работает с Navigation controller
+//MARK: - Segue (show detail) - работает с  UISplitViewController
+//MARK: - Segue (present modally) - для открытия временных окон. (нстройки, плеер) 
+
+//MARK: - swipe (UISwipeGesture) - https://www.youtube.com/watch?v=eMmBiyZ3lBA
+
+//MARK: - NavigationBar. сделать NavigationBar прозрачным: navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//MARK: - NavigationBar. скрыть разделительную полосу: navigationController?.navigationBar.shadowImage = UIImage()
+//MARK: - NavigationBar. изменить цвет иконок. navigationController?.navigationBar.tintColor = .white
+//MARK: - NavigationBar. Сделать Бар большим navigationController?.navigationBar.prefersLargeTitles = true
+//MARK: - NavigationBar. Изменить цвет текста у title: navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.blue]
+
+//MARK: - Версия iOS установленная на устройстве:
+//if #available(iOS 11.0, *) {
+//}
+//MARK: - NavigationBar. Добавить изображение и текст в title:
+//func setupNavigationBar() {
+//
+//let imageView = UIImageView(image: #imageLiteral(resourceName: "info@3x.png"))
+//imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+//imageView.contentMode = .scaleAspectFit
+//
+//let label = UILabel()
+//label.text = "FAQ"
+//label.font = UIFont(name: "OpenSansCondensed-Bold", size: 30)
+//label.textColor = .white
+//
+//let stackView = UIStackView(arrangedSubviews: [imageView, label])
+//stackView.axis = .horizontal
+//stackView.frame.size = CGSize(width: imageView.frame.size.width + label.frame.size.width, height: max(imageView.frame.size.height, label.frame.size.height))
+//stackView.spacing = 20
+//
+//navigationItem.titleView = stackView
+//
+//if #available(iOS 11.0, *) {
+//    navigationItem.largeTitleDisplayMode = .never
+//}
