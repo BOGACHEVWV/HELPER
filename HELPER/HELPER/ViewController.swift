@@ -50,24 +50,25 @@
 //    let randomBool = Bool.random()
 //    стандартные библиотечные функции для высококачественных случайных чисел: arc4random() или arc4random_uniform(),
 
-// MARK: - Textfield. Textfield deligate
+// MARK: - Textfield.
+//Textfield deligate
 //private func configurateTF() {
 //redTF.delegate = self
 //greenTF.delegate = self
 //blueTF.delegate = self
 
-// MARK: - Textfield  Клавиатура скрывается тапом по экрану
+//Textfield.  Клавиатура скрывается тапом по экрану
 //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //    super.touchesBegan(touches, with: event)
 //    view.endEditing(true)
 //}
 
-// MARK: - Textfield. Textfield deligate.  Клавиатура скрывается нажатием на Return
+//Textfield. Textfield deligate.  Клавиатура скрывается нажатием на Return
 //   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 //       textField.resignFirstResponder()
 //       return true
 
-// MARK: - Textfield. Textfield deligate. Действие после завершения работы с textfield
+//Textfield. Textfield deligate. Действие после завершения работы с textfield
 //func textFieldDidEndEditing(_ textField: UITextField) {
 //        guard let text = textField.text else { return }
 //        if let currentValue = Float(text) {
@@ -124,31 +125,35 @@
 //}
 //
 //}
-//MARK: - Segue. Возврат с вьюконтролера без сохранения инфы
+//MARK: - Segue
+//Segue. Возврат с вьюконтролера без сохранения инфы
 //@IBAction func closeVCBbutton() {
 //dismiss(animated: true, completion: nil)
 //    }
-//MARK: - Segue. Возврат с вьюконтроллера с возможностью передачи данных (данный код пишется на вью, на который возвращаемся
+
+//Возврат с вьюконтроллера с возможностью передачи данных (данный код пишется на вью, на который возвращаемся
 //@IBAction func unwindSegue(segue: UIStoryboardSegue) {
 //let thirdVC = segue.source as! ViewController
 //(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
 
-//MARK: - Segue (show) - работает с Navigation controller
-//MARK: - Segue (show detail) - работает с  UISplitViewController
-//MARK: - Segue (present modally) - для открытия временных окон. (нстройки, плеер) 
+//Segue (show) - работает с Navigation controller
+//Segue (show detail) - работает с  UISplitViewController
+//Segue (present modally) - для открытия временных окон. (нстройки, плеер)
 
 //MARK: - swipe (UISwipeGesture) - https://www.youtube.com/watch?v=eMmBiyZ3lBA
 
-//MARK: - NavigationBar. сделать NavigationBar прозрачным: navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//MARK: - NavigationBar. скрыть разделительную полосу: navigationController?.navigationBar.shadowImage = UIImage()
-//MARK: - NavigationBar. изменить цвет иконок. navigationController?.navigationBar.tintColor = .white
-//MARK: - NavigationBar. Сделать Бар большим navigationController?.navigationBar.prefersLargeTitles = true
-//MARK: - NavigationBar. Изменить цвет текста у title: navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.blue]
+//MARK: - NavigationBar
+//сделать NavigationBar прозрачным: navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
 
-//MARK: - Версия iOS установленная на устройстве:
-//if #available(iOS 11.0, *) {
-//}
-//MARK: - NavigationBar. Добавить изображение и текст в title:
+//NavigationBar. скрыть разделительную полосу: navigationController?.navigationBar.shadowImage = UIImage()
+
+//NavigationBar. изменить цвет иконок. navigationController?.navigationBar.tintColor = .white
+
+//NavigationBar. Сделать Бар большим navigationController?.navigationBar.prefersLargeTitles = true
+
+//NavigationBar. Изменить цвет текста у title: navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.blue]
+
+//NavigationBar. Добавить изображение и текст в title:
 //func setupNavigationBar() {
 //
 //let imageView = UIImageView(image: #imageLiteral(resourceName: "info@3x.png"))
@@ -169,4 +174,8 @@
 //
 //if #available(iOS 11.0, *) {
 //    navigationItem.largeTitleDisplayMode = .never
+//}
+
+//MARK: - Версия iOS установленная на устройстве:
+//if #available(iOS 11.0, *) {
 //}
