@@ -133,7 +133,8 @@
 
 //Возврат с вьюконтроллера с возможностью передачи данных (данный код пишется на вью, на который возвращаемся
 //@IBAction func unwindSegue(segue: UIStoryboardSegue) {
-//let thirdVC = segue.source as! ViewController
+//guard segue.identifier == "saveSegue" else { return }
+//let sourseVC = segue.source as! SecondViewController
 //(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
 
 //Segue (show) - работает с Navigation controller
@@ -178,4 +179,72 @@
 
 //MARK: - Версия iOS установленная на устройстве:
 //if #available(iOS 11.0, *) {
-//}
+//MARK: - TableView//
+//   настройка ячейки
+//   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//       let cell = tableView.dequeueReusableCell(withIdentifier: "testTableViewCell", for: indexPath) as! TestTableViewCell
+//       let object = objects[indexPath.row]
+//       cell.setUI(object: object)
+// setUI на вьюконтроллере ячейки
+//func setUI(object: Emoji) {
+//   emojiLabel.text = object.emoji
+//   nameLabel.text = object.name
+//   describtionLabel.text = object.describtion
+//   }
+//
+//       return cell
+//   }
+//   функция кнопки Edit на navigationBar
+//   override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+//       return .delete
+//   } // delete установлено по умолчанию
+//
+//   настройка функции кнопки Edit
+//   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//       if editingStyle == .delete {
+//           // Delete the row from the data source
+//           objects.remove(at: indexPath.row)
+//           tableView.deleteRows(at: [indexPath], with: .fade)
+//       }
+//   }
+//   перемещение ячейки (бургер справа)
+//   override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//       return true
+//   }
+//
+//   override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//       let removedCell = objects.remove(at: sourceIndexPath.row)
+//       objects.insert(removedCell, at: destinationIndexPath.row)
+//       tableView.reloadData()
+//    }
+//   leadingSwipeActionsConfigurationForRowAt или  trailingSwipeActionsConfigurationForRowAt
+//   override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//       let done = doneAction(at: indexPath)
+//       let changeColor = changeColorAction(at: indexPath)
+//       return UISwipeActionsConfiguration(actions: [done, changeColor])
+//   }
+//
+//
+//   func doneAction(at indexPath: IndexPath) -> UIContextualAction {
+//       let action = UIContextualAction(style: .destructive, title: "Done") { (action, view, completion) in
+//           self.objects.remove(at: indexPath.row)
+//           self.tableView.deleteRows(at: [indexPath], with: .automatic)
+//           completion(true)
+//       }
+//       action.backgroundColor = .systemPink
+//       action.image = UIImage(systemName: "trash.circle.fill")
+//       return action
+//   }
+//
+//   func changeColorAction(at indexPath: IndexPath) -> UIContextualAction {
+//       var object = objects[indexPath.row]
+//       let action = UIContextualAction(style: .normal, title: "Change color") { (action, view, completion) in
+//           object.isFavorite = !object.isFavorite
+//           self.objects[indexPath.row] = object
+//           completion(true)
+//       }
+//
+//       action.backgroundColor = object.isFavorite ? .black : .blue // если true, то  black
+//       action.image = UIImage(systemName: "paintbrush.fill")
+//       return action
+//   }
