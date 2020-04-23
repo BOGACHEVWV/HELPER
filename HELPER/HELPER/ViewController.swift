@@ -137,6 +137,10 @@
 //let sourseVC = segue.source as! SecondViewController
 //(создается на вьюконтроллере, на который нужно вернуться (segue.source). В сториборде перетягивается с кнопки на  Exit
 
+//override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//super.prepare(for: segue, sender: sender)
+//guard segue.identifier == "saveSegue" else { return }
+
 //Segue (show) - работает с Navigation controller
 //Segue (show detail) - работает с  UISplitViewController
 //Segue (present modally) - для открытия временных окон. (нстройки, плеер)
@@ -179,8 +183,11 @@
 
 //MARK: - Версия iOS установленная на устройстве:
 //if #available(iOS 11.0, *) {
+
 //MARK: - TableView//
+
 //   настройка ячейки
+
 //   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //       let cell = tableView.dequeueReusableCell(withIdentifier: "testTableViewCell", for: indexPath) as! TestTableViewCell
 //       let object = objects[indexPath.row]
@@ -194,12 +201,15 @@
 //
 //       return cell
 //   }
+//
 //   функция кнопки Edit на navigationBar
+
 //   override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
 //       return .delete
 //   } // delete установлено по умолчанию
 //
 //   настройка функции кнопки Edit
+
 //   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 //       if editingStyle == .delete {
 //           // Delete the row from the data source
@@ -207,7 +217,9 @@
 //           tableView.deleteRows(at: [indexPath], with: .fade)
 //       }
 //   }
+
 //   перемещение ячейки (бургер справа)
+
 //   override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
 //       return true
 //   }
