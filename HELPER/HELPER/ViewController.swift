@@ -260,3 +260,5 @@
 //       action.image = UIImage(systemName: "paintbrush.fill")
 //       return action
 //   }
+
+// SVGSwift https://cocoapods.org/pods/SwiftSVG
