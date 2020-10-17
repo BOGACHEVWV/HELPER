@@ -148,38 +148,50 @@
 //MARK: - swipe (UISwipeGesture) - https://www.youtube.com/watch?v=eMmBiyZ3lBA
 
 //MARK: - NavigationBar
-//сделать NavigationBar прозрачным: navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+/*сделать NavigationBar прозрачным: navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
 
-//NavigationBar. скрыть разделительную полосу: navigationController?.navigationBar.shadowImage = UIImage()
+NavigationBar. скрыть разделительную полосу: navigationController?.navigationBar.shadowImage = UIImage()
 
-//NavigationBar. изменить цвет иконок. navigationController?.navigationBar.tintColor = .white
+NavigationBar. изменить цвет иконок. navigationController?.navigationBar.tintColor = .white
 
-//NavigationBar. Сделать Бар большим navigationController?.navigationBar.prefersLargeTitles = true
+NavigationBar. Сделать Бар большим navigationController?.navigationBar.prefersLargeTitles = true
 
-//NavigationBar. Изменить цвет текста у title: navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.blue]
+NavigationBar. Изменить цвет текста у title: navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.blue]
 
-//NavigationBar. Добавить изображение и текст в title:
-//func setupNavigationBar() {
-//
-//let imageView = UIImageView(image: #imageLiteral(resourceName: "info@3x.png"))
-//imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-//imageView.contentMode = .scaleAspectFit
-//
-//let label = UILabel()
-//label.text = "FAQ"
-//label.font = UIFont(name: "OpenSansCondensed-Bold", size: 30)
-//label.textColor = .white
-//
-//let stackView = UIStackView(arrangedSubviews: [imageView, label])
-//stackView.axis = .horizontal
-//stackView.frame.size = CGSize(width: imageView.frame.size.width + label.frame.size.width, height: max(imageView.frame.size.height, label.frame.size.height))
-//stackView.spacing = 20
-//
-//navigationItem.titleView = stackView
-//
-//if #available(iOS 11.0, *) {
-//    navigationItem.largeTitleDisplayMode = .never
-//}
+ NavigationBar. Автоматическое изменение размера шрифта. Жирный шрифт
+ 
+        let titleLabel = UILabel()
+        titleLabel.text = ""
+        titleLabel.font = UIFont.init(name: "Arial", size: 17)
+        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.heavy)// Нужный шрифт
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.minimumScaleFactor = 0.75 // Минимальный относительный размер шрифта
+        navigationItem.titleView = titleLabel
+    
+ 
+NavigationBar. Добавить изображение и текст в title:
+func setupNavigationBar() {
+
+let imageView = UIImageView(image: #imageLiteral(resourceName: "info@3x.png"))
+imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+imageView.contentMode = .scaleAspectFit
+
+let label = UILabel()
+label.text = "FAQ"
+label.font = UIFont(name: "OpenSansCondensed-Bold", size: 30)
+label.textColor = .white
+
+let stackView = UIStackView(arrangedSubviews: [imageView, label])
+stackView.axis = .horizontal
+stackView.frame.size = CGSize(width: imageView.frame.size.width + label.frame.size.width, height: max(imageView.frame.size.height, label.frame.size.height))
+stackView.spacing = 20
+
+navigationItem.titleView = stackView
+
+if #available(iOS 11.0, *) {
+    navigationItem.largeTitleDisplayMode = .never
+}
+*/
 
 //MARK: - Версия iOS установленная на устройстве:
 //if #available(iOS 11.0, *) {
