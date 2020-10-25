@@ -275,7 +275,7 @@ if #available(iOS 11.0, *) {
 
 // SVGSwift https://cocoapods.org/pods/SwiftSVG
 
-// MARK: - Поиск ошибка при парсинге JSON API
+// MARK: - Поиск ошибки при парсинге JSON API
 /*
 } catch let DecodingError.dataCorrupted(context) {
     print(context)
@@ -292,3 +292,33 @@ if #available(iOS 11.0, *) {
     print("error: ", error)
 }
 */
+
+// MARK: - swiftUI
+
+//Клавиатура скрывается тапом по экрану
+//extension UIApplication {
+//    func endEditing() {
+//        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+//    }
+//}
+// пишется к стеку, в котором долны произойти изменения
+//.onTapGesture {
+//    UIApplication.shared.endEditing()
+//    value = Double(TFtext) ?? 0
+//}
+
+// MARK: - Модификаторы
+//расположить текст внутри TextField
+//.multilineTextAlignment(.trailing)
+
+// MARK: - Alert
+// вызвается модификатором к объекту в котором будут неправильно введеные значения
+
+//.alert(isPresented: $showAlert, content: {
+//    Alert(
+//        title: Text("Wrong Format"),
+//        message:Text ("Value from 0 to 255")
+//    )
+//})
+//
+
