@@ -6,6 +6,8 @@
 //  Copyright © 2021 BOGACHEVWV. All rights reserved.
 //
 
+
+// MARK: -
 /*
  */
 
@@ -49,7 +51,7 @@
  lround(Double)
  */
 
-// MARK: - создание собственноого модификатора
+// MARK: - Модификатор. Изменение существующего модификатора
 /*
  Изменение существующего модификатора
  
@@ -72,8 +74,34 @@
          modifier(FrameFromSize(size: size))
      }
  }
- 
  */
+
+// MARK: - Модификатор. Создание собственноого модификатора
+/*
+ TextField("Enter your name", text: $userName)
+ //                        .modifier(BorderedView())
+ .borderedView()
+ 
+ struct BorderedView:ViewModifier {
+ func body(content: Content) -> some View {
+ content
+ .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+ //                        .background(Color.yellow)
+ .overlay(
+ RoundedRectangle(cornerRadius: 10)
+ .stroke(Color.red, lineWidth: 2)
+ .shadow(color: Color.black.opacity(1), radius: 1)
+ )
+ }
+ }
+ 
+ extension View {
+ func borderedView() -> some View {
+ modifier(BorderedView())
+ }
+ }
+ */
+
 
 // MARK: - padding() Сразу во все встороны
 /*
