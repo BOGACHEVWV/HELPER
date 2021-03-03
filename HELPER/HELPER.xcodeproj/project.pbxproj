@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046069B425D460E000268F73 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046069B325D460E000268F73 /* SwiftUI.swift */; };
+		0462F3BE25EEBAE10088E2DF /* modificators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462F3BD25EEBAE10088E2DF /* modificators.swift */; };
 		0497670523CB3B3C003C9CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497670423CB3B3C003C9CC6 /* AppDelegate.swift */; };
 		0497670723CB3B3C003C9CC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497670623CB3B3C003C9CC6 /* SceneDelegate.swift */; };
 		0497670923CB3B3C003C9CC6 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497670823CB3B3C003C9CC6 /* UIKit.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		046069B325D460E000268F73 /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
+		0462F3BD25EEBAE10088E2DF /* modificators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modificators.swift; sourceTree = "<group>"; };
 		0497670123CB3B3C003C9CC6 /* HELPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HELPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0497670423CB3B3C003C9CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0497670623CB3B3C003C9CC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0462F3BC25EEBAC90088E2DF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				046069B325D460E000268F73 /* SwiftUI.swift */,
+				0462F3BD25EEBAE10088E2DF /* modificators.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		049766F823CB3B3C003C9CC6 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +72,7 @@
 				0497670423CB3B3C003C9CC6 /* AppDelegate.swift */,
 				0497670623CB3B3C003C9CC6 /* SceneDelegate.swift */,
 				0497670823CB3B3C003C9CC6 /* UIKit.swift */,
-				046069B325D460E000268F73 /* SwiftUI.swift */,
+				0462F3BC25EEBAC90088E2DF /* SwiftUI */,
 				0497670A23CB3B3C003C9CC6 /* Main.storyboard */,
 				0497670D23CB3B3D003C9CC6 /* Assets.xcassets */,
 				0497670F23CB3B3D003C9CC6 /* LaunchScreen.storyboard */,
@@ -143,6 +154,7 @@
 			files = (
 				0497670923CB3B3C003C9CC6 /* UIKit.swift in Sources */,
 				0497670523CB3B3C003C9CC6 /* AppDelegate.swift in Sources */,
+				0462F3BE25EEBAE10088E2DF /* modificators.swift in Sources */,
 				0497670723CB3B3C003C9CC6 /* SceneDelegate.swift in Sources */,
 				046069B425D460E000268F73 /* SwiftUI.swift in Sources */,
 			);
