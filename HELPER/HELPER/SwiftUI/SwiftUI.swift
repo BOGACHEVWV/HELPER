@@ -290,3 +290,25 @@
  
  */
 
+// MARK: - TabView изменить цвет фона
+/*
+ 
+ init() {
+   UITabBar.appearance().backgroundColor = UIColor.white
+   UITabBar.appearance().backgroundImage = UIImage()
+ }
+ 
+ */
+
+// MARK: - 
+/*
+ 
+ */
+
+
+// MARK: -
+/*
+ 
+ */
+
+
