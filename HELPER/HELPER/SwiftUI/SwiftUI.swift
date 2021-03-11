@@ -104,7 +104,7 @@
  */
 
 
-// MARK: - padding() Сразу во все встороны
+// MARK: - padding() Сразу во все стороны
 /*
  .padding(EdgeInsets(top: <#T##CGFloat#>, leading: <#T##CGFloat#>, bottom: <#T##CGFloat#>, trailing: <#T##CGFloat#>))
  */
@@ -300,7 +300,7 @@
  
  */
 
-// MARK: - 
+// MARK: -
 /*
  
  */
