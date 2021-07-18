@@ -290,6 +290,41 @@
  
  */
 
+// MARK: - NavigationBar - пример настройки элементов бара
+/*
+ .navigationBarTitleDisplayMode(.inline)
+ .toolbar {
+     ToolbarItem(placement: .navigationBarLeading) {
+     }
+ }
+ .toolbar {
+     ToolbarItem(placement: .principal) {
+         VStack {
+             Text(secondsToMinutesAndSeconds(seconds: timerManager.timeleft))
+                 .font(Font.custom("ArialMT", size: 30))
+             Spacer()
+         }
+     }
+ }
+ .toolbar {
+     ToolbarItem(placement: .navigationBarTrailing) {
+         HStack {
+             Spacer()
+             NavigationLink(destination: Text("Second View")) {
+                 ZStack {
+                     Image(systemName: "slider.horizontal.3")
+                         .foregroundColor(.black)
+                         .font(.title)
+                 }
+                 //
+             }
+             
+             
+         }
+     }
+ } //toolBars
+ */
+
 // MARK: - TabView изменить цвет фона
 /*
  
@@ -300,9 +335,10 @@
  
  */
 
-// MARK: -
+// MARK: - Спящий режим экрана (отключить)
 /*
- 
+ .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
+ .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
  */
 
 
